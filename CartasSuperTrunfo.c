@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Variáveis para a primeira cidade
+    // Variáveis para a primeira carta
     char letra_estado1;
     char codigo1[4];
     char nome_cidade1[50];
@@ -12,7 +12,7 @@ int main() {
     float densidade1;
     float pib_por_pessoa1;
 
-    // Variáveis para a segunda cidade
+    // Variáveis para a segunda carta
     char letra_estado2;
     char codigo2[4];
     char nome_cidade2[50];
@@ -48,13 +48,13 @@ int main() {
     printf("Pontos Turisticos: ");
     scanf("%d", &pontos_tur1);
     
-    // Calcula a densidade (habitantes por km²)
+    // Calcula a densidade 
     densidade1 = habitantes1 / tamanho1;
     
     // Calcula PIB por pessoa (converte bilhões para reais)
     pib_por_pessoa1 = (pib1 * 1000000000) / habitantes1;
 
-    // Cadastro da segunda cidade (igual ao primeiro)
+    // Cadastro da segunda cidade
     printf("\nCadastro da Cidade 2:\n");
     
     printf("Letra do Estado (A-H): ");
@@ -82,8 +82,8 @@ int main() {
     densidade2 = habitantes2 / tamanho2;
     pib_por_pessoa2 = (pib2 * 1000000000) / habitantes2;
 
-    // Mostra os resultados da primeira cidade
-    printf("\nCidade 1:\n");
+    // Mostra os resultados da primeira carta
+    printf("\nCarta 1:\n");
     printf("Estado: %c\n", letra_estado1);
     printf("Codigo: %s\n", codigo1);
     printf("Nome: %s\n", nome_cidade1);
@@ -94,8 +94,8 @@ int main() {
     printf("Densidade: %.2f hab/km²\n", densidade1);
     printf("PIB por pessoa: %.2f reais\n", pib_por_pessoa1);
 
-    // Mostra os resultados da segunda cidade
-    printf("\nCidade 2:\n");
+    // Mostra os resultados da segunda carta
+    printf("\nCarta 2:\n");
     printf("Estado: %c\n", letra_estado2);
     printf("Codigo: %s\n", codigo2);
     printf("Nome: %s\n", nome_cidade2);
