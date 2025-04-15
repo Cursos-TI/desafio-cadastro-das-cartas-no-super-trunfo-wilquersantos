@@ -161,6 +161,18 @@ int main() {
            (superpoder1 > superpoder2) ? 1 : 2,
            (superpoder1 > superpoder2) ? 1 : 0);
 
+    // COMPARAÇÃO DO ATRIBUTO INDIVIDUAL (POPULAÇÃO)
+     printf("\nComparação de cartas (Atributo: População):\n");
+     printf("\nCarta 1 - %s (%c): %lu\n", nome_cidade1, letra_estado1, populacao1);
+     printf("Carta 2 - %s (%c): %lu\n", nome_cidade2, letra_estado2, populacao2);           
+       if (populacao1 > populacao2) {
+              printf("\nResultado: Carta 1 (%s) venceu!\n", nome_cidade1);
+       } else if (populacao2 > populacao1) {
+              printf("\nResultado: Carta 2 (%s) venceu!\n", nome_cidade2);
+       } else {
+              printf("\nResultado: Empate!\n");
+       }            
+       
 
     return 0;
 }
